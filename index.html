@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Rakshith Mathad - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
     <header>
@@ -16,6 +18,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs-playground">My blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -27,7 +30,7 @@
             <div class="about-content">
                 <img src="pic.JPEG" alt="Rakshith Mathad" class="profile-image">
                 <div class="about-text">
-                    <p>I am a Software Engineer specializing in Generative AI and Data Science, currently working at CVS Health in New York City. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from The University of Southern California and have extensive experience in developing and deploying AI systems that impact millions of users.</p>
+                    <p>I am a Software Engineer specializing in Generative AI and Data Science, currently working at CVS Health (Aetna Insurance) in New York City. I'm passionately curious and I like building large scalable AI and LLM systems with a keen interest in Inference, GPUs, HPC, and parallelism. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from The University of Southern California and have extensive experience in developing and deploying AI systems that impact/scale to millions of users. </p>
                     <div class="skills-section">
                         <h3>Technical Skills</h3>
                         <div class="skills-grid">
@@ -43,33 +46,8 @@
                     </div>
                     <div class="resume-download">
                         <a href="Rakshith_Resume.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> Download Resume
+                            Download Resume
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="currently-cooking" class="section">
-        <div class="container">
-            <h2>Currently Cooking 🍳</h2>
-            <div class="cooking-content">
-                <div class="cooking-projects">
-                    <div class="cooking-project">
-                        <h3>CUDA + OpenMP Hybrid Vector Addition Project</h3>
-                        <p>Working on a high-performance CUDA + OpenMP hybrid vector addition project that combines CPU and GPU parallelism. The implementation achieves an 8.8x performance improvement over single CUDA streams by using 4 OpenMP threads with parallel CUDA streams for overlapped memory transfers and optimal load balancing.</p>
-                        <div class="project-link">
-                            <a href="https://github.com/rakshith-rm/cuda-plus-openmp" target="_blank">View on GitHub</a>
-                        </div>
-                    </div>
-                    
-                    <div class="cooking-project">
-                        <h3>GPT3 Implementation from Scratch</h3>
-                        <p>Building a GPT3 implementation from scratch to understand the transformer architecture and attention mechanisms. This project focuses on implementing the core components of the GPT model including multi-head attention, feed-forward networks, and the complete transformer architecture.</p>
-                        <div class="project-link">
-                            <a href="https://github.com/rakshith-rm/gpt-implementation" target="_blank">View on GitHub</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -202,7 +180,6 @@
                         <li>Integrated Pinecone VectorDB and HuggingFace Sentence Transformer</li>
                         <li>Implemented NVIDIA NeMo Guardrails and LoRA LLM finetuning</li>
                         <li>Developed e2e pipeline for LoRa finetuning and quantization</li>
-                        <li>Improved inference using NVIDIA Triton Inference Server</li>
                     </ul>
                 </div>
 
@@ -214,7 +191,7 @@
                         <li>Implemented anomaly detection for adversary client nodes</li>
                         <li>Applied Homomorphic Encryption in distributed learning</li>
                     </ul>
-                    <a href="https://ieeexplore.ieee.org/document/9788247" target="_blank" class="research-link">View Publication <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://ieeexplore.ieee.org/document/9788247" target="_blank" class="research-link">View Publication</a>
                 </div>
 
                 <div class="project-card certification-card">
@@ -224,14 +201,14 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" alt="NVIDIA Logo" class="cert-logo">
                             <div>
                                 <h4>NVIDIA CUDA Computing</h4>
-                                <a href="https://learn.nvidia.com/certificates?id=QaLNX9QXSO2QM_suM3aeMw" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://learn.nvidia.com/certificates?id=QaLNX9QXSO2QM_suM3aeMw" target="_blank" class="cert-link">View Certificate</a>
                             </div>
                         </div>
                         <div class="cert-item">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Juniper_Networks_logo.svg" alt="Juniper Networks Logo" class="cert-logo">
                             <div>
                                 <h4>Juniper Networks Certified Associate, Junos (JNCIA-Junos)</h4>
-                                <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="cert-link">View Certificate</a>
                             </div>
                         </div>
                     </div>
@@ -240,24 +217,52 @@
         </div>
     </section>
 
-    <section id="good-reads" class="section">
+    <section id="blogs-playground" class="section">
         <div class="container">
-            <h2>Collection of Good Reads 📚</h2>
-            <div class="reads-content">
-                <div class="read-item">
-                    <h3>Understanding and Coding the KV Cache in LLMs from Scratch</h3>
-                    <p>A comprehensive guide to implementing KV caches for efficient LLM inference, covering the fundamental concepts and practical code implementation.</p>
-                    <a href="https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms" target="_blank" class="read-link">
-                        <i class="fas fa-external-link-alt"></i> Read Article
-                    </a>
+            <h2>Blogs and Playground</h2>
+            <div class="blogs-playground-content">
+                <!-- Building Projects -->
+                <div class="section-subtitle">
+                    <h3>Building</h3>
                 </div>
-                
-                <div class="read-item">
-                    <h3>Understanding LLM System with 3-layer Abstraction</h3>
-                    <p>An in-depth exploration of LLM system architecture using a three-layer abstraction model for better understanding of large language model systems.</p>
-                    <a href="https://ralphmao.github.io/ML-software-system/" target="_blank" class="read-link">
-                        <i class="fas fa-external-link-alt"></i> Read Article
-                    </a>
+                <div class="cooking-projects">
+                    <div class="cooking-project">
+                        <h3>CUDA + OpenMP Hybrid Vector Addition Project</h3>
+                        <p>Working on a high-performance CUDA + OpenMP hybrid vector addition project that combines CPU and GPU parallelism. The implementation achieves an 8.8x performance improvement over single CUDA streams by using 4 OpenMP threads with parallel CUDA streams for overlapped memory transfers and optimal load balancing.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/rakshith-rm/cuda-plus-openmp" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cooking-project">
+                        <h3>GPT3 Implementation from Scratch</h3>
+                        <p>Building a GPT3 implementation from scratch to understand the transformer architecture and attention mechanisms. This project focuses on implementing the core components of the GPT model including multi-head attention, feed-forward networks, and the complete transformer architecture.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/rakshith-rm/gpt-implementation" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My blogs and collections -->
+                <div class="section-subtitle">
+                    <h3>My blogs and collections</h3>
+                </div>
+                <div class="reads-content">
+                    <div class="read-item">
+                        <h3>Understanding and Coding the KV Cache in LLMs from Scratch</h3>
+                        <p>A comprehensive guide to implementing KV caches for efficient LLM inference, covering the fundamental concepts and practical code implementation.</p>
+                        <a href="https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms" target="_blank" class="read-link">
+                            Read Article
+                        </a>
+                    </div>
+                    
+                    <div class="read-item">
+                        <h3>Understanding LLM System with 3-layer Abstraction</h3>
+                        <p>An in-depth exploration of LLM system architecture using a three-layer abstraction model for better understanding of large language model systems.</p>
+                        <a href="https://ralphmao.github.io/ML-software-system/" target="_blank" class="read-link">
+                            Read Article
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,6 +274,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <a href="mailto:rakshith1262k@gmail.com">rakshith1262k@gmail.com</a>
+                    <a href="mailto:mathad@usc.edu">mathad@usc.edu</a>
                     <a href="tel:+12132727811">(213) 272-7811</a>
                     <a href="https://www.linkedin.com/in/rakshith-mathad/" target="_blank">LinkedIn</a>
                     <a href="https://github.com/rakshith-rm" target="_blank">GitHub</a>
