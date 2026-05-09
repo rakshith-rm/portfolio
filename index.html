@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Rakshith Mathad - Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <header>
@@ -30,13 +30,13 @@
             <div class="about-content">
                 <img src="pic.JPEG" alt="Rakshith Mathad" class="profile-image">
                 <div class="about-text">
-                    <p>I am a <strong>Software/Machine Learning Engineer</strong> specializing in LLMs, Generative AI and Data Science, currently working at CVS Health (Aetna Insurance) in New York City. I'm passionately curious and I like building large scalable AI and LLM systems with a keen interest in <strong>Inference Optimization</strong>, GPUs, HPC, and parallelism. I work closely with hardware-software codesign for problems involving latency, throughput, and scalability. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from <strong>The University of Southern California</strong> and have extensive experience in developing and deploying AI systems that impact/scale to millions of users. </p>
+                    <p>I am a <strong>Software/Machine Learning Engineer</strong> specializing in LLMs, Generative AI and Data Science, currently working at CVS Health (Aetna Insurance) in New York City. I'm passionately curious and I like building large scalable AI and LLM systems with a keen interest in <strong>Inference Optimization &amp; HW/SW Co-Design</strong>, GPUs, HPC, and parallelism. I work closely with hardware-software codesign for problems involving latency, throughput, and scalability. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from <strong>The University of Southern California</strong> and have extensive experience in developing and deploying AI systems that impact/scale to millions of users. </p>
                     <p>(I'm currently on H1B Visa status)</p>
                     <div class="skills-section">
                         <h3>Technical Skills</h3>
                         <div>
                             <p><strong>Languages:</strong> Python, SQL, C, C++, CUDA (Intermediate), OpenMP (Intermediate)</p>
-                            <p><strong>Tools & Technologies:</strong> Analytics, Deep Learning, Machine Learning, A/B Testing, GCP Vertex AI, AWS, Kubernetes K8s, Docker, Git, Informatica ETL, OpenMP(Intermediate), Web Scraping/Automation, AI Research, Parallel Programming, Numpy, Pandas, Scikit learn, LangChain, Nvidia DGX Server, Nsight Profiling, Nvidia NeMo, TensorRT, LLMOps, RAG, VectorDBs, LLM Training and Inference techniques, HuggingFace, FastAPI, RESTful API, Responsible AI, Linux, MongoDB, Selenium, Hadoop HDFS, PySpark, PowerBI/Tableau, LLMs, Generative AI, MapReduce, Azure, Google Cloud Platform, BigQuery, HiveQL, Horovod, ArcGIS, MLOps, Jenkins CI/CD, NLP, Forecasting, Unsupervised ML, Generative Models</p>
+                            <p><strong>Tools & Technologies:</strong> Analytics, Deep Learning, Machine Learning, A/B Testing, GCP Vertex AI, GCP ADK, AWS, Kubernetes K8s, Docker, Git, Informatica ETL, OpenMP(Intermediate), Web Scraping/Automation, AI Research, Parallel Programming, Numpy, Pandas, Scikit learn, LangChain, MCP, Nvidia DGX Server, Nsight Profiling, Nvidia NeMo, TensorRT, LLMOps, RAG, VectorDBs, LLM Training and Inference techniques, HuggingFace, FastAPI, RESTful API, Responsible AI, Linux, MongoDB, Selenium, Hadoop HDFS, PySpark, PowerBI/Tableau, LLMs, Generative AI, MapReduce, Azure, Google Cloud Platform, BigQuery, HiveQL, Horovod, ArcGIS, MLOps, Jenkins CI/CD, NLP, Forecasting, Unsupervised ML, Generative Models</p>
                         </div>
                     </div>
                     <div class="resume-download">
@@ -53,7 +53,7 @@
         <div class="container">
             <h2>My Blogs</h2>
             <div class="blogs-playground-content">
-                <div class="reads-content">
+                <div class="projects-grid reads-content">
                     <div class="read-item">
                         <h3>Token of Thoughts: Inference Optimization and Serving of LLMs on GPUs</h3>
                         <p>An in-depth exploration of LLM inference optimization techniques and GPU serving strategies for large language models.</p>
@@ -232,6 +232,26 @@
                     <a href="https://scholar.google.com/citations?hl=en&user=lCBZEv4AAAAJ" target="_blank" class="research-link">Google Scholar</a>
                 </div>
 
+                <div class="project-card">
+                    <h3>vLLM Weight Snapshot Prototype</h3>
+                    <ul>
+                        <li>Built a vLLM weight-snapshot prototype that restores saved model weights into warm vLLM GPU slots</li>
+                        <li>Reduced distilgpt2 activation from a 13.5s cold start to a 0.74s warm restore path</li>
+                        <li>Enabled model switching between distilgpt2 and gpt2 in about 0.8-1.2s on GPU</li>
+                        <li>Exploring full vLLM and container runtime checkpointing with CRIU + CUDA checkpointing toward true serverless cold starts</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>Free Claude Code Proxy (NVIDIA NIM Bridge)</h3>
+                    <ul>
+                        <li>Built a local proxy server that enables Claude Code CLI usage by intercepting Anthropic API traffic</li>
+                        <li>Translated Anthropic requests to NVIDIA NIM's OpenAI-compatible API format in real time</li>
+                        <li>Implemented bidirectional conversion for requests, responses, and SSE streaming events</li>
+                        <li>Designed the proxy to preserve CLI behavior while routing through an alternate inference backend</li>
+                    </ul>
+                </div>
+
                 <div class="project-card certification-card">
                     <div class="cert-content">
                         <h3>Certifications</h3>
@@ -274,16 +294,6 @@
                     </p>
                 </div>
 
-                <!-- Building Projects as simple text -->
-                <div class="section-subtitle">
-                    <h3>Building</h3>
-                </div>
-                <div>
-                    <p>
-                        <strong>GPT3 Implementation from Scratch</strong> — Implementing core transformer components (multi-head attention, FFN) to deeply understand the architecture.
-                        <a href="https://github.com/rakshith-rm/gpt-implementation" target="_blank">View on GitHub</a>
-                    </p>
-                </div>
             </div>
         </div>
     </section>
